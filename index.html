@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LotteryApp 1.0</title>
+        <script src="code.js"></script>
+<link rel="stylesheet" href="index.css">
+    </head>
+    <body onload="alert('Welcome to the Kigali LotteryApp!!!!!\nClick the Generate button then choose your lucky three numbers from the list displayed.\nTry to check whether the numbers you\'ve choosen are winning numbers.\nclick the checker button to get feeback thereafter clear the feeback to try another number ')">
+        <div id="main_content">
+            <img src="./images - Edited.jpg" alt="andela_logo">
+            <h1>Kigali LotteryApp</h1>
+            <div class="submit">
+                <button onclick="generator(lottery_array)">Generate</button>
+            </div><br/>
+            <div id="number"><p id="numbers"></p></div><br/> 
+            <p><strong>Enter your 3 numbers one at a time in the space below;</strong></p>
+            <input id="num" type='number' min="1" max='100'><br/>
+            <div id="txt"></div><br/>
+            <button onclick="digitize(document.getElementById('num').value)">Checker</button>
+            <button onclick="document.getElementById('txt').innerHTML = '   ' ">Clear Message</button>
+        </div>   
+    </body>
+    <footer><img id="img2" src="./Capture.PNG" alt=""></footer>
+</html>
+
+      
+            
